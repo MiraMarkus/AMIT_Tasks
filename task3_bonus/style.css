@@ -1,0 +1,101 @@
+header{
+    /* padding: 0%  45%; */
+}
+
+header h1{
+    padding: 0%  45%;
+    font-weight: normal;
+    font-size: 250%;
+}
+
+header p{
+    padding: 0% 35% 20% 45%;
+    color: rgba(37, 35, 35, 0.849);
+    
+    
+}
+
+header p span {
+    background-color: black;
+    color: white;
+}
+/* section section_heading{
+    padding: 0 0 10% 0;
+} */
+
+section{
+    width: 50%;
+    padding: 0 0 0 10%;
+    display: inline-block;
+}
+section img{
+    width: 100%;
+}
+
+.com{
+    background-color: black;
+    color: white;
+}
+
+button{
+    display: inline-block ;
+    /* padding: 1px 2px; */
+}
+
+.pp{
+    display: inline;
+    padding: 0 0 0 70%;
+}
+
+about{
+    width: 30%;
+    padding: 0 0 0 60%;
+    display: inline-block;
+    
+}
+my_name img{
+    width: 100%;
+}
+
+post img{
+    width: 50%;
+}
+
+
+.tt{
+    background-color: black;
+    color: white;
+}
+
+tags{
+    width: 30%;
+    padding: 0 0 10% 60%;
+    display: inline-block;
+    
+}
+
+tags span{
+    background-color: bisque;
+}
+
+footer{
+    background-color: rgb(59, 57, 57);
+    color: white;
+}
+
+.mmm{
+    background-color: gray;
+    color: white;
+}
+
+.nnn{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* my_name{
+    width: 100%;
+    padding: 10%;
+} */
