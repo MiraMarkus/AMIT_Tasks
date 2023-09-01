@@ -62,7 +62,16 @@ In summary, percentage width is relative to the parent container, while viewport
 Both are properties that control the size of the flex item within a flex container, yet they do this in slightly different manner.
 
 1. Flex-basis :
-  - Flex-basis is a property that defines the initial size of a flex item  along the main axis before any available space is distributed among the items.
-  - It sets the ideal size for a flex item, and the browser tries to allocate that much space to the item.
-  - When used inside a flex container, flex-basis specifies the default size of the flex item before considering any remainning space or constraints.
-  - Flex-basis values can be 
+   - Flex-basis is a property that defines the initial size of a flex item  along the main axis before any available space is distributed among the items.
+   - It sets the ideal size for a flex item, and the browser tries to allocate that much space to the item.
+   - When used inside a flex container, flex-basis specifies the default size of the flex item before considering any remainning space or constraints.
+   - Flex-basis values can be specified using various measurement units, such as pixels, percentage, etc. It can also be set to auto which means that the browser should use the items content size as the basis.
+
+2. Width :
+   - Width is one of the standard css properties. It sets the width of an element  regardless of it being a flex item.
+   - When used on a flex item, it specifies a fixed width for that item, and the item won't grow or shrink to accommodate the available space within the flex container.
+   - Unlike flex-basis, width is not part of the flex layout algorithm i.e it won't adjust to the available space in the flex container.
+
+They key difference between them is :
+  Flex-basis is more flexible in a flex layout because it allows items to grow or shrink based on the available space, which is one of the main behaviours of flexbox.
+  While for width, it imposes a fixed width on the element, and it won't adapt to changes in the available space. It essentially overrides the flexible behaviour of flexbox making it rigid.
