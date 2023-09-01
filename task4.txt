@@ -1,0 +1,68 @@
+        ***Difference between width by percentage and width by viewport width ::
+
+In CSS, you can control the width of elements using various units of measurement, including percentages (%) and viewport width (vw). These units have distinct characteristics and are used in different contexts to achieve specific design goals. Let's explore the differences between these two units in detail:
+
+1. Percentage (%) Width:
+   - Percentage width is relative to the parent container's width. If you set an element's width to a percentage value, it will be a percentage of the width of its containing element.
+   - For example, if you set an element's width to 50%, it will take up half of the width of its parent container.
+   - Percentage widths are responsive because they adapt to changes in the parent container's width. This makes them useful for creating fluid layouts that adjust to different screen sizes and orientations.
+   - However, percentage widths can be affected by the content within the element. If the content is too wide, it might overflow the container or cause the element to expand beyond the intended width.
+
+2. Viewport Width (vw) Width:
+   - Viewport width is a relative unit of measurement based on the width of the viewport (the visible area of the browser window). One vw unit is equal to 1% of the viewport width.
+   - Setting an element's width using vw units means that it will be a percentage of the browser window's width, not its parent container's width.
+   - Viewport width units are often used for responsive design, especially when you want to create elements that scale proportionally to the screen size. For instance, setting an element to 50vw will make it half the width of the viewport, regardless of its parent container.
+   - VW units are not affected by the content within the element, making them a good choice for creating elements with fixed proportions regardless of content.
+
+Here's a practical example to illustrate the difference:
+
+HTML:
+html
+<div class="parent">
+  <div class="child child-percent">50% Width</div>
+  <div class="child child-vw">50vw Width</div>
+</div>
+
+
+CSS:
+css
+.parent {
+  width: 80%; /* Parent container takes up 80% of its parent's width. */
+  margin: 0 auto; /* Centering the parent container. */
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.child {
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.child-percent {
+  width: 50%; /* Child's width is 50% of the parent's width. */
+  background-color: skyblue;
+}
+
+.child-vw {
+  width: 50vw; /* Child's width is 50% of the viewport width. */
+  background-color: lightcoral;
+}
+
+
+In this example, you'll see that the child with a percentage width (child-percent) will be 50% of its parent's width, whereas the child with a viewport width (child-vw) will be 50% of the viewport's width, which is not affected by the parent's width.
+
+In summary, percentage width is relative to the parent container, while viewport width is relative to the browser window's width. The choice between these units depends on your design requirements and whether you want the width to adapt to the parent or the viewport.
+
+
+
+         ***Difference between basis and width in display flex ::
+
+Both are properties that control the size of the flex item within a flex container, yet they do this in slightly different manner.
+
+1. Flex-basis :
+  - Flex-basis is a property that defines the initial size of a flex item  along the main axis before any available space is distributed among the items.
+  - It sets the ideal size for a flex item, and the browser tries to allocate that much space to the item.
+  - When used inside a flex container, flex-basis specifies the default size of the flex item before considering any remainning space or constraints.
+  - Flex-basis values can be 
