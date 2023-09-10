@@ -1,0 +1,427 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 8%;
+    background-color: #E3E6F3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+nav .links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    padding-top: 1%;
+}
+nav .links a{
+   text-decoration: none;
+   color: rgb(42, 41, 41);
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: capitalize;
+   
+}
+nav .links a.active {
+    color: #0bc7ba;
+}
+nav .links a{
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+}
+nav .links a.active::after,
+nav .links a:hover::after
+
+{
+    content: "";
+    border: 1px solid #0bc7ba;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left:5%;
+    margin-top: 15%;
+
+}
+nav .links a:hover{
+    color: #0bc7ba;;
+}
+
+
+/* ============================ header ============= */
+
+header {
+    background-image: url("img/hero4.png");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+ margin-top: 3%;
+}
+header .cap{
+   position: absolute;
+   top: 40%;
+   left: 10%;
+   line-height: 60px;
+}
+header .cap h1:first-of-type{
+   font-size: 50px;
+   color: rgb(46, 46, 46);;
+}
+header .cap h1:nth-child(3){
+   font-size: 50px;
+   color: #0bc7ba;;
+}
+header .cap p{
+    color: #465b52;;
+}
+header .cap a{
+    text-decoration: none;
+    color: #0bc7ba;
+    background-image: url("img/button.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 50%;
+    height: 7vh;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ================ features ==================== */
+.features{
+    display: flex;
+    /* margin-top: 7%; */
+    justify-content: space-evenly;
+    /* padding: 0 10%; */
+    width: 90%;
+    margin:7% auto;
+}
+.features div{
+    width: 15.5%;
+    border: 1px solid #cce7d0;
+    text-align: center;
+    /* padding: 5%; */
+    height: 35vh;
+    box-shadow: 0 4px 8px 0 rgba(111, 110, 110, 0.2), 0 6px 20px 0 rgba(111, 110, 110, 0.2);
+}
+.features div img{
+   width: 100%;
+   padding: 5%;
+}
+.features div p{
+ 
+   color: #0bc7ba;
+   width: fit-content;
+   padding: 6%;
+   margin: auto;
+   margin-top: 15%;
+   border-radius: 5px;
+   font-size: 18px;
+}
+.features div:nth-child(1) p{
+   background-color: #fddde4;
+}
+.features div:nth-child(2) p{
+   background-color: #cdebbc;
+}
+.features div:nth-child(3) p{
+   background-color: #cce7d0;
+}
+.features div:nth-child(4) p{
+   background-color: #cdd4f8;
+}
+.features div:nth-child(5) p{
+   background-color: #f6dbf6;
+}
+.features div:nth-child(6) p{
+   background-color: #fff2e5;
+}
+/* =================== products ============== */
+.NewArrival .cap{
+   text-align: center;
+}
+.NewArrival .cap h1{
+   color: rgb(46, 46, 46);
+   font-size: 50px;
+}
+.NewArrival .cap p{
+       color: #465b52;
+       margin: 2% 0;
+}
+.NewArrival .products{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       width: 90%;
+       margin: auto;
+}
+.NewArrival .products .product{
+    width: 22%;
+    border: 1px solid #cce7d0;
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1% 0;
+    box-shadow: 0 4px 8px 0 rgba(140, 138, 138, 0.19), 0 6px 20px 0 rgba(134, 133, 133, 0.19);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.NewArrival .products .product:hover{
+    box-shadow: 5px 10px 8px 0 rgba(105, 104, 104, 0.19), 5px 10px 20px 0 rgba(105, 104, 104, 0.19);
+
+}
+.NewArrival .products div img{
+    width: 100%;
+    border-radius: 15px;
+    /* padding: 5%; */
+}
+.NewArrival .products div p{
+    color: #465b52;
+    margin-top:5%;
+}
+.NewArrival .products div h4{
+   margin: 3% 0;
+}
+.NewArrival .products .stars i{
+    color: rgb(255, 174, 0);
+}
+.NewArrival .products .cart{
+    display: flex;
+    justify-content: space-between;
+}
+.NewArrival .products .cart p{
+    font-size: 20px;
+    color:#0bc7ba;
+    font-weight: bold;
+}
+.NewArrival .products .cart i{
+   background-color: #e8f6ea;
+   border-radius: 50%;
+   width: 20%;
+   height:7vh;
+   text-align: center;
+   line-height: 50px;
+   font-size: 20px;
+   color:#0bc7ba;
+
+}
+
+/* ========================= Arrivals ========================== */
+arrivals{
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-image: url("img/banner/b2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+arrivals .xx p{
+    font-size: 20px;
+    color: white;
+}
+arrivals .xx p span{
+    font-size: 20px;
+    color: red;
+}
+arrivals .xx button{
+    width: 100px;
+    height: 35px;
+}
+arrivals .xx button:hover{
+    background-color: #0bc7ba;
+    color: white;
+}
+
+.Arrivals .cap{
+    text-align: center;
+ }
+ /* arrivals .arrivals{
+    
+ }
+ .NewArrival .cap p{
+        color: #465b52;
+        margin: 2% 0;
+ } */
+ .Arrivals .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto;
+ }
+ .Arrivals .products .product{
+     width: 22%;
+     border: 1px solid #cce7d0;
+     border-radius: 15px;
+     padding: 1%;
+     margin: 1% 0;
+     box-shadow: 0 4px 8px 0 rgba(140, 138, 138, 0.19), 0 6px 20px 0 rgba(134, 133, 133, 0.19);
+     transition: all 0.5s ease-in-out;
+     cursor: pointer;
+ 
+ }
+ .Arrivals .products .product:hover{
+     box-shadow: 5px 10px 8px 0 rgba(105, 104, 104, 0.19), 5px 10px 20px 0 rgba(105, 104, 104, 0.19);
+ 
+ }
+ .Arrivals .products div img{
+     width: 100%;
+     border-radius: 15px;
+     /* padding: 5%; */
+ }
+ .Arrivals .products div p{
+     color: #465b52;
+     margin-top:5%;
+ }
+ .Arrivals .products div h4{
+    margin: 3% 0;
+ }
+ .Arrivals .products .stars i{
+     color: rgb(255, 174, 0);
+ }
+ .Arrivals .products .cart{
+     display: flex;
+     justify-content: space-between;
+ }
+ .Arrivals .products .cart p{
+     font-size: 20px;
+     color:#0bc7ba;
+     font-weight: bold;
+ }
+ .Arrivals .products .cart i{
+    background-color: #e8f6ea;
+    border-radius: 50%;
+    width: 20%;
+    height:7vh;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color:#0bc7ba;
+ 
+ }
+
+
+/* ========================= footer ========================== */
+footer{
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .child{
+    display: flex;
+    flex-direction: column;
+
+}
+footer div:nth-child(1){
+    width: 39%;
+    
+}
+footer div:nth-child(1) img{
+    height: 5vh;
+    width: 40%;
+    margin: 3% 0;
+
+}
+footer div:nth-child(1) h2{
+    margin: 3% 0;
+
+}
+footer div:nth-child(1) p{
+    margin: 1% 0;
+    color: #465b52;
+
+}
+footer div:nth-child(1) p span{
+    color: rgb(94, 93, 93);
+    font-weight: bold;
+
+}
+
+footer div:nth-child(2) h2,
+footer div:nth-child(3) h2
+
+{
+    color:rgb(46, 46, 46);;
+    margin: 7% 0;
+    text-transform: capitalize;
+
+}
+footer div:nth-child(4) h2
+{
+    color:rgb(46, 46, 46);;
+    margin: 2% 0;
+    text-transform: capitalize;
+
+}
+footer div:nth-child(2) a,
+footer div:nth-child(3) a
+
+
+{
+    text-decoration: none;
+    color: #465b52;
+    text-transform: capitalize;
+    padding-top:10%;
+
+}
+
+footer div:nth-child(4) p
+{
+ color: #465b52;
+ margin: 2% 0;
+
+}
+footer div:nth-child(4) div 
+{
+margin: 1% 0;
+
+}
+footer div:nth-child(4) 
+{
+ width: 37%;
+
+}
+footer div:nth-child(4) div 
+{
+width: 100%;
+
+}
+footer div:nth-child(4) div img
+{
+ border: 1px solid #028077ce;
+ border-radius: 5px;
+
+}
+footer div:nth-child(2) ,
+footer div:nth-child(3) 
+{
+
+width: 19%;
+}
+footer div:nth-child(2){
+    margin-left: 1%;
+}
+
+footer div:nth-child(1) .social i:hover{
+    color: #0bc7ba;
+}
+
