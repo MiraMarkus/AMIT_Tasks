@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('images/woman-exploring-beautiful-rural-surroundings_23-2149125497.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.avatar-container{
+    padding-top: 50px;
+    align-self: center;
+}
+.page .avatar-container img{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FFFF;
+    border-radius: 100px 100px 100px 100px;
+}
+.page .caption h3{
+    color: rgb(0, 0, 0); 
+    font-size: 38px;
+    font-weight: bold; 
+    padding: 25px; 
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.page .caption p{
+    text-align: center;
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
+    font-weight: 400; 
+    padding: 25px; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+}
+.page .social-media{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 25px;
+    position: absolute;
+    top: 52%;
+}
+.page .social-media span{
+    margin: 5px;
+    width: 70px; 
+    height: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #b5cede; 
+    border-radius: 50%; 
+}
+.page .social-media span:hover{
+    background-color: #70b3dc;
+    cursor: pointer;
+}
+.bottom-section{
+    margin-left: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    position: absolute;
+    justify-content: center;
+    top: 70%;
+}
+.bottom-section .background{
+    width: 200px; 
+    height: 200px;
+    align-self: center;
+    background-color: #b5cede; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.bottom-section .background h1:hover{
+    cursor: pointer;
+}
