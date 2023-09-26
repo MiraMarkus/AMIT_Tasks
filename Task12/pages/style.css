@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(62, 62, 61);
+}
+
+.SignUp{
+    width: 30%;
+    margin: 1% auto;
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
+    border-radius: 5px;
+    height: 93vh;
+    padding: 1%;
+}
+
+.SignUp h1{
+    margin: 4%;
+}
+
+.SignUp input{
+    padding: 4%;
+    background-color: black;
+    border: 1px solid rgb(33, 33, 33); 
+    width: 90%;
+    border-radius: 5px;
+    margin: 3% 0;
+    color: aliceblue;
+}
+
+input[type="submit"]{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error{
+    color: red;
+}
