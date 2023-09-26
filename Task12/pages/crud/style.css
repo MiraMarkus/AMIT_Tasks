@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(253, 252, 252);
+}
+
+.container{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.head{
+    color: black;
+    margin: 3% 0;
+    line-height: 50px;
+}
+
+input{
+    background-color: rgb(226, 217, 217);
+    border: 1px solid rgb(46, 41, 41);
+    padding: 1.5%;
+    border-radius: 5px;
+    width: 49%;
+    margin: 1.5% 0;
+    color: black;
+    font-size: 20px;
+}
+
+input::placeholder{
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    background-color: rgb(12, 10, 12);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+/* table , tr , td , th {
+     border: 1px solid rgb(46, 41, 41); 
+}    */
+
+table{
+    width: 100%;;
+}
+
+th{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td{
+    padding: 1%;
+    color: rgb(20, 30, 39);
+    font-size: 20px;
+}
+
+#delete , #update{
+    background-color: rgb(12, 10, 12);
+    padding: 6% 10%;
+    border-radius: 5px;
+    border: 1px solid rgb(12, 10, 12);
+    color: aliceblue;
+}
+#delete_all button{
+    background-color: rgb(12, 10, 12);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid rgb(46, 41, 41);
+    padding: 1%;
+    margin: 2% 0;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>CRUD</h1>
+        </div>
+
+        <form >
+            <input type="text" name="title" placeholder="title"  autocomplete="off">
+            <input type="number" name="price"  placeholder="price"  autocomplete="off">
+            <input type="text" name="category"  placeholder="category"  autocomplete="off">
+            <input type="number" name="quantity"  placeholder="quantity"  autocomplete="off">
+            <input type="submit" value="Create" >
+        </form>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>category</th>
+                <th>quantity</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+
+            <div id="delete_all">
+                
+            </div>
+            
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+    
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
